@@ -12,8 +12,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText getName;
-    private Button button;
-    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +19,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.status));
         getName = findViewById(R.id.getName);
-        button = findViewById(R.id.button);
+        Button button = findViewById(R.id.button);
 
 
         button.setOnClickListener(view -> {
-            sendData();
+
+            if (TextUtils.isEmpty(getName.getText().toString()))
+            {
+                Toast.makeText(MainActivity.this, "Please Enter Your Name!!!", Toast.LENGTH_SHORT).show();
+
+            }
+            else
+            {
+                sendData();
+            }
         });
     }
 
     private void sendData() {
-        name=getName.getText().toString().trim();
+        String name = getName.getText().toString().trim();
         Intent i = new Intent(MainActivity.this, WishesActivity.class);
-        i.putExtra(WishesActivity.NAME,name);
+        i.putExtra(WishesActivity.NAME, name);
         startActivity(i);
         finish();
     }
