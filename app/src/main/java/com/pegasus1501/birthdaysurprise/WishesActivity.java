@@ -27,7 +27,7 @@ public class WishesActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             startActivity(new Intent(WishesActivity.this, VideoActivity.class));
             finish();
-        }, secondsDelayed * 2000);
+        }, secondsDelayed * 3000);
 
         TextView nameShow = findViewById(R.id.nameShow);
         Intent i = getIntent();

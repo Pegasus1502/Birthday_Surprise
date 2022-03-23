@@ -9,21 +9,23 @@
     tools:context=".WishesActivity">
 
 
-    <TextView
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:fontFamily="@font/insta"
-        android:text="HAPPY  BIRTH  DAY!!!"
+        android:fontFamily="@font/dancingscript"
+        android:text="@string/happy_birthday"
         android:textAlignment="center"
-        android:textColor="@color/black"
-
-        android:textSize="@dimen/_45sdp"
-
+        android:textColor="#000000"
+        android:textSize="@dimen/_40sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209"
+        app:neumorph_shapeType="basin" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
