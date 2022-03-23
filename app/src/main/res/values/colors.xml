@@ -9,7 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="status">#CECAC9</color>
-    <color name="wish">#EFE4C8</color>
+    <color name="status">#EAEAEA</color>
+    <color name="wish">#DDD1B4</color>
+
 
 </resources>

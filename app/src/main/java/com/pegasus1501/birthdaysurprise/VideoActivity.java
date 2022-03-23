@@ -16,7 +16,7 @@ public class VideoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
-        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white));
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.black));
 
         videoView = findViewById(R.id.videoView);
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video);
