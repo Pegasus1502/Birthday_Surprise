@@ -6,7 +6,7 @@ To setup this project in your way you have to follow some instructions given bel
 Step 1: Goto app/src/main/res/value/string.xml
 
 <resources>
-    <string name="app_name">Ria(Pechi)</string>  <----Change the app name here....
+    <string name="app_name">Surprise</string>  <----Change the app name here....(Optional)
     <string name="i_have_surprise_for_you">I Have Surprise For You...</string>
     <string name="hey">Hey!!!</string>
     <string name="enter_your_name">Enter Your Name</string>
