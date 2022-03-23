@@ -9,6 +9,38 @@
     tools:context=".WishesActivity">
 
 
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="220dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="288dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardView"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:neumorph_backgroundColor="@color/wish"
+            app:neumorph_shapeType="basin"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="254dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2"
+                android:layout_width="143dp"
+                android:layout_height="137dp"
+                android:src="@drawable/subject" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/nameShow"
         android:layout_width="wrap_content"
@@ -19,20 +51,10 @@
         android:textSize="@dimen/_45sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.975" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.504" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="143dp"
-        android:layout_height="137dp"
-        android:layout_marginTop="288dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/subject" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
