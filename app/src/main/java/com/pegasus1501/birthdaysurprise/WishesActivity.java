@@ -21,7 +21,7 @@ public class WishesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wishes);
-        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.wish));
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.first));
 
         int secondsDelayed = 1;
         new Handler().postDelayed(() -> {

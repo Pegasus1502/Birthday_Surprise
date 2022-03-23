@@ -9,23 +9,39 @@
     tools:context=".WishesActivity">
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/insta"
+        android:text="HAPPY  BIRTH  DAY!!!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textSize="@dimen/_45sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="220dp"
         android:layout_height="185dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="220dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/cardView"
-            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:neumorph_backgroundColor="@color/wish"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
             app:neumorph_shapeType="basin"
             tools:layout_editor_absoluteX="13dp"
             tools:layout_editor_absoluteY="254dp">
@@ -41,7 +57,7 @@
 
     </LinearLayout>
 
-    <TextView
+    <soup.neumorphism.NeumorphTextView
         android:id="@+id/nameShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
